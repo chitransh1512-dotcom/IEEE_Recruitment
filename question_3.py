@@ -1,0 +1,13 @@
+import numpy as np
+matrix = np.random.randint(1, 101, size=(5, 5))
+print("Matrix (5x5):")
+print(matrix)
+print("Maximum:", matrix.max())
+print("Minimum:", matrix.min())
+print("Mean:", matrix.mean())
+normmatrix = (matrix - matrix.min()) / (matrix.max() - matrix.min())
+print("Normalized Matrix (0-1):")
+print(normmatrix)
+flattened = np.sort(matrix.flatten())
+print("Flattened Array:")
+print(flattened)
